@@ -1,52 +1,552 @@
 [
-  {"id":1,"question":"Which of the following correctly prints Hello in Python 3?","options":["print \"Hello\"","print(\"Hello\")","echo(\"Hello\")","console.log(\"Hello\")"],"answer":1},
-  {"id":2,"question":"Which keyword is used to define a function in Python?","options":["func","function","def","define"],"answer":2},
-  {"id":3,"question":"What is the output of type(5.0)?","options":["int","float","double","decimal"],"answer":1},
-  {"id":4,"question":"Which data type is immutable?","options":["list","dict","set","tuple"],"answer":3},
-  {"id":5,"question":"What is the output of 2 ** 3?","options":["6","8","9","5"],"answer":1},
-  {"id":6,"question":"What is the output of 7 // 2?","options":["3.5","3","4","2"],"answer":1},
-  {"id":7,"question":"Which of these is NOT a valid variable name?","options":["_count","2value","value2","my_var"],"answer":1},
-  {"id":8,"question":"Which operator is used for logical AND in Python?","options":["&","&&","and","AND"],"answer":2},
-  {"id":9,"question":"What does len('Python') return?","options":["5","6","7","0"],"answer":1},
-  {"id":10,"question":"Which list method adds an element at the end of the list?","options":["add()","append()","push()","insert_end()"],"answer":1},
-  {"id":11,"question":"What is the output of list(range(1, 4))?","options":["[1, 2, 3, 4]","[1, 2, 3]","[0, 1, 2, 3]","(1, 2, 3)"],"answer":1},
-  {"id":12,"question":"Which keyword is used to exit a loop immediately?","options":["stop","exit","break","end"],"answer":2},
-  {"id":13,"question":"Which keyword skips the current iteration of a loop?","options":["pass","continue","skip","next"],"answer":1},
-  {"id":14,"question":"What does the pass statement do?","options":["Exits the loop","Does nothing; acts as a placeholder","Raises an error","Skips the iteration"],"answer":1},
-  {"id":15,"question":"What is the output of 'abc'.upper()?","options":["abc","ABC","Abc","Error"],"answer":1},
-  {"id":16,"question":"Which function is used to take user input?","options":["get()","scan()","input()","read()"],"answer":2},
-  {"id":17,"question":"What type does input() return by default?","options":["int","float","str","It depends on the value"],"answer":2},
-  {"id":18,"question":"Which bracket is used to create a dictionary?","options":["[ ]","( )","{ }","< >"],"answer":2},
-  {"id":19,"question":"Which list method removes an item by its value?","options":["pop()","remove()","delete()","discard_value()"],"answer":1},
-  {"id":20,"question":"What is the output of bool(0)?","options":["True","False","0","Error"],"answer":1},
-  {"id":21,"question":"Which slicing expression reverses a string s?","options":["s[::-1]","s.reverse()","reverse(s)","s[-1:]"],"answer":0},
-  {"id":22,"question":"What is the output of 10 % 3?","options":["3","1","0","3.33"],"answer":1},
-  {"id":23,"question":"Which keyword is used to start exception handling?","options":["catch","try","error","throw"],"answer":1},
-  {"id":24,"question":"Which block always runs after try and except, whether or not an error occurred?","options":["else","finally","end","last"],"answer":1},
-  {"id":25,"question":"Which built-in function is used to open a file?","options":["open()","file()","read()","load()"],"answer":0},
-  {"id":26,"question":"Which file mode is used to open a file for writing and overwrite existing content?","options":["\"r\"","\"a\"","\"w\"","\"x\""],"answer":2},
-  {"id":27,"question":"Which set method returns the union of two sets?","options":["union()","join()","merge()","add()"],"answer":0},
-  {"id":28,"question":"What is the output of 'Hello'[1]?","options":["H","e","l","o"],"answer":1},
-  {"id":29,"question":"Which built-in function returns the largest item in an iterable?","options":["max()","big()","top()","highest()"],"answer":0},
-  {"id":30,"question":"Which keyword is used to import a module?","options":["include","import","using","require"],"answer":1},
-  {"id":31,"question":"What is the output of the following expression? print(3 > 2 and 5 < 1)","options":["True","False","None","Error"],"answer":1},
-  {"id":32,"question":"What does enumerate() return when used in a for loop?","options":["Index and value pairs","Only values","Only indexes","A sorted list"],"answer":0},
-  {"id":33,"question":"Which data type is mutable?","options":["tuple","str","list","frozenset"],"answer":2},
-  {"id":34,"question":"What is the output of len({1, 2, 2, 3})?","options":["4","3","2","Error"],"answer":1},
-  {"id":35,"question":"Which symbol is used for a single-line comment in Python?","options":["//","/* */","#","--"],"answer":2},
-  {"id":36,"question":"What is the output of the following expression? print(\"ha\" * 3)","options":["hahaha","ha3","Error","['ha', 'ha', 'ha']"],"answer":0},
-  {"id":37,"question":"Which dictionary method returns all keys?","options":["keys()","get_keys()","key()","items_list()"],"answer":0},
-  {"id":38,"question":"Which function converts the string '10' into an integer?","options":["str()","int()","float()","num()"],"answer":1},
-  {"id":39,"question":"What is the default return value of a function that has no return statement?","options":["0","An empty string","None","False"],"answer":2},
-  {"id":40,"question":"Which loop is best when the number of iterations is known in advance?","options":["while","for","do-while","repeat"],"answer":1},
-  {"id":41,"question":"What does a decorator do in Python?","options":["Modifies or extends a function's behaviour without changing its source code","Declares a new class","Creates a new thread","Compresses a file"],"answer":0},
-  {"id":42,"question":"What is a generator in Python?","options":["A function that uses yield to produce values lazily","A class with an __init__ method","A built-in module","A numeric data type"],"answer":0},
-  {"id":43,"question":"What is the purpose of __slots__ in a class?","options":["It restricts instance attributes and reduces memory usage","It makes all attributes private","It enables multiple inheritance","It speeds up module imports"],"answer":0},
-  {"id":44,"question":"What is the output of the following code? print([x * x for x in range(3)])","options":["[0, 1, 4]","[1, 4, 9]","[0, 1, 2]","[0, 1, 4, 9]"],"answer":0},
-  {"id":45,"question":"What is the Global Interpreter Lock (GIL) in CPython?","options":["It lets threads run Python bytecode truly in parallel","It allows only one thread to execute Python bytecode at a time","It locks files during writing","It locks dictionary keys"],"answer":1},
-  {"id":46,"question":"What does a lambda expression create?","options":["An anonymous function","A class","A module","A generator object"],"answer":0},
-  {"id":47,"question":"Which special method is called automatically when an object is created?","options":["__del__","__init__","__str__","__call__"],"answer":1},
-  {"id":48,"question":"What does the with statement guarantee?","options":["Faster execution","Automatic resource cleanup through __exit__","Multithreading","Static type checking"],"answer":1},
-  {"id":49,"question":"What is the output of the following code? def f(x, lst=[]): lst.append(x) return lst f(1) print(f(2))","options":["[2]","[1, 2]","[1]","Error"],"answer":1},
-  {"id":50,"question":"What does *args allow in a function definition?","options":["Collects extra positional arguments into a tuple","Collects keyword arguments into a dictionary","Unpacks a dictionary into keyword arguments","It works only inside lambda functions"],"answer":0}
+  {
+    "id": 1,
+    "question": "Which of the following correctly prints Hello in Python 3?",
+    "options": [
+      "print \"Hello\"",
+      "print(\"Hello\")",
+      "echo(\"Hello\")",
+      "console.log(\"Hello\")"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "question": "Which keyword is used to define a function in Python?",
+    "options": [
+      "func",
+      "function",
+      "def",
+      "define"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "question": "What is the output of type(5.0)?",
+    "options": [
+      "int",
+      "float",
+      "double",
+      "decimal"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "question": "Which data type is immutable?",
+    "options": [
+      "list",
+      "dict",
+      "set",
+      "tuple"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 5,
+    "question": "What is the output of 2 ** 3?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "question": "What is the output of 7 // 2?",
+    "options": [
+      "3.5",
+      "3",
+      "4",
+      "2"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 7,
+    "question": "Which of these is NOT a valid variable name?",
+    "options": [
+      "_count",
+      "2value",
+      "value2",
+      "my_var"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 8,
+    "question": "Which operator is used for logical AND in Python?",
+    "options": [
+      "&",
+      "&&",
+      "and",
+      "AND"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 9,
+    "question": "What does len('Python') return?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "0"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 10,
+    "question": "Which list method adds an element at the end of the list?",
+    "options": [
+      "add()",
+      "append()",
+      "push()",
+      "insert_end()"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 11,
+    "question": "What is the output of list(range(1, 4))?",
+    "options": [
+      "[1, 2, 3, 4]",
+      "[1, 2, 3]",
+      "[0, 1, 2, 3]",
+      "(1, 2, 3)"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 12,
+    "question": "Which keyword is used to exit a loop immediately?",
+    "options": [
+      "stop",
+      "exit",
+      "break",
+      "end"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 13,
+    "question": "Which keyword skips the current iteration of a loop?",
+    "options": [
+      "pass",
+      "continue",
+      "skip",
+      "next"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 14,
+    "question": "What does the pass statement do?",
+    "options": [
+      "Exits the loop",
+      "Does nothing; acts as a placeholder",
+      "Raises an error",
+      "Skips the iteration"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 15,
+    "question": "What is the output of 'abc'.upper()?",
+    "options": [
+      "abc",
+      "ABC",
+      "Abc",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 16,
+    "question": "Which function is used to take user input?",
+    "options": [
+      "get()",
+      "scan()",
+      "input()",
+      "read()"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 17,
+    "question": "What type does input() return by default?",
+    "options": [
+      "int",
+      "float",
+      "str",
+      "It depends on the value"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 18,
+    "question": "Which bracket is used to create a dictionary?",
+    "options": [
+      "[ ]",
+      "( )",
+      "{ }",
+      "< >"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 19,
+    "question": "Which list method removes an item by its value?",
+    "options": [
+      "pop()",
+      "remove()",
+      "delete()",
+      "discard_value()"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 20,
+    "question": "What is the output of bool(0)?",
+    "options": [
+      "True",
+      "False",
+      "0",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 21,
+    "question": "Which slicing expression reverses a string s?",
+    "options": [
+      "s[::-1]",
+      "s.reverse()",
+      "reverse(s)",
+      "s[-1:]"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 22,
+    "question": "What is the output of 10 % 3?",
+    "options": [
+      "3",
+      "1",
+      "0",
+      "3.33"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 23,
+    "question": "Which keyword is used to start exception handling?",
+    "options": [
+      "catch",
+      "try",
+      "error",
+      "throw"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 24,
+    "question": "Which block always runs after try and except, whether or not an error occurred?",
+    "options": [
+      "else",
+      "finally",
+      "end",
+      "last"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 25,
+    "question": "Which built-in function is used to open a file?",
+    "options": [
+      "open()",
+      "file()",
+      "read()",
+      "load()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 26,
+    "question": "Which file mode is used to open a file for writing and overwrite existing content?",
+    "options": [
+      "\"r\"",
+      "\"a\"",
+      "\"w\"",
+      "\"x\""
+    ],
+    "answer": 2
+  },
+  {
+    "id": 27,
+    "question": "Which set method returns the union of two sets?",
+    "options": [
+      "union()",
+      "join()",
+      "merge()",
+      "add()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 28,
+    "question": "What is the output of 'Hello'[1]?",
+    "options": [
+      "H",
+      "e",
+      "l",
+      "o"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 29,
+    "question": "Which built-in function returns the largest item in an iterable?",
+    "options": [
+      "max()",
+      "big()",
+      "top()",
+      "highest()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 30,
+    "question": "Which keyword is used to import a module?",
+    "options": [
+      "include",
+      "import",
+      "using",
+      "require"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 31,
+    "question": "What is the output of the following expression? print(3 > 2 and 5 < 1)",
+    "options": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 32,
+    "question": "What does enumerate() return when used in a for loop?",
+    "options": [
+      "Index and value pairs",
+      "Only values",
+      "Only indexes",
+      "A sorted list"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 33,
+    "question": "Which data type is mutable?",
+    "options": [
+      "tuple",
+      "str",
+      "list",
+      "frozenset"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 34,
+    "question": "What is the output of len({1, 2, 2, 3})?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 35,
+    "question": "Which symbol is used for a single-line comment in Python?",
+    "options": [
+      "//",
+      "/* */",
+      "#",
+      "--"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 36,
+    "question": "What is the output of the following expression? print(\"ha\" * 3)",
+    "options": [
+      "hahaha",
+      "ha3",
+      "Error",
+      "['ha', 'ha', 'ha']"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 37,
+    "question": "Which dictionary method returns all keys?",
+    "options": [
+      "keys()",
+      "get_keys()",
+      "key()",
+      "items_list()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 38,
+    "question": "Which function converts the string '10' into an integer?",
+    "options": [
+      "str()",
+      "int()",
+      "float()",
+      "num()"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "question": "What is the default return value of a function that has no return statement?",
+    "options": [
+      "0",
+      "An empty string",
+      "None",
+      "False"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 40,
+    "question": "Which loop is best when the number of iterations is known in advance?",
+    "options": [
+      "while",
+      "for",
+      "do-while",
+      "repeat"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 41,
+    "question": "What does a decorator do in Python?",
+    "options": [
+      "Modifies or extends a function's behaviour without changing its source code",
+      "Declares a new class",
+      "Creates a new thread",
+      "Compresses a file"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 42,
+    "question": "What is a generator in Python?",
+    "options": [
+      "A function that uses yield to produce values lazily",
+      "A class with an __init__ method",
+      "A built-in module",
+      "A numeric data type"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 43,
+    "question": "What is the purpose of __slots__ in a class?",
+    "options": [
+      "It restricts instance attributes and reduces memory usage",
+      "It makes all attributes private",
+      "It enables multiple inheritance",
+      "It speeds up module imports"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 44,
+    "question": "What is the output of the following code? print([x * x for x in range(3)])",
+    "options": [
+      "[0, 1, 4]",
+      "[1, 4, 9]",
+      "[0, 1, 2]",
+      "[0, 1, 4, 9]"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 45,
+    "question": "What is the Global Interpreter Lock (GIL) in CPython?",
+    "options": [
+      "It lets threads run Python bytecode truly in parallel",
+      "It allows only one thread to execute Python bytecode at a time",
+      "It locks files during writing",
+      "It locks dictionary keys"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 46,
+    "question": "What does a lambda expression create?",
+    "options": [
+      "An anonymous function",
+      "A class",
+      "A module",
+      "A generator object"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 47,
+    "question": "Which special method is called automatically when an object is created?",
+    "options": [
+      "__del__",
+      "__init__",
+      "__str__",
+      "__call__"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 48,
+    "question": "What does the with statement guarantee?",
+    "options": [
+      "Faster execution",
+      "Automatic resource cleanup through __exit__",
+      "Multithreading",
+      "Static type checking"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 49,
+    "question": "What is the output of the following code? def f(x, lst=[]): lst.append(x) return lst f(1) print(f(2))",
+    "options": [
+      "[2]",
+      "[1, 2]",
+      "[1]",
+      "Error"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 50,
+    "question": "What does *args allow in a function definition?",
+    "options": [
+      "Collects extra positional arguments into a tuple",
+      "Collects keyword arguments into a dictionary",
+      "Unpacks a dictionary into keyword arguments",
+      "It works only inside lambda functions"
+    ],
+    "answer": 0
+  }
 ]
